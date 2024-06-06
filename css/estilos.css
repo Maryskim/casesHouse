@@ -86,7 +86,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/imagenes/banner.jpeg");
+    ,url("imagenes/banner.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -665,6 +665,8 @@ ul.Contactos li {
      height: 0;
     overflow: hidden;
     max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .video-container iframe {
@@ -771,7 +773,7 @@ ul.Contactos li {
     }
 
     #somos-cases .img-container{
-        background-image: url("/imagenes/quienes.jpeg");
+        background-image: url("imagenes/quienes.jpeg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -832,7 +834,7 @@ ul.Contactos li {
 
 @media screen and (min-width: 1025px) {
     #hero {
-        height: 55vh;
+        height: 60vh;
     }
 
 
