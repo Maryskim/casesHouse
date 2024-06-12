@@ -86,7 +86,7 @@ header a:hover{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("imagenes/banner.jpeg");
+    ,url("/imagenes/banner.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -392,10 +392,9 @@ footer .container i {
     text-align: center;
 }
 
-.info-product a button {
-    font-weight: bold;
-    padding: 1em 3.4em;
+.info-product button a {
     color: white;
+    text-decoration: none;
     background-color: #DFB625;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -448,10 +447,13 @@ footer .container i {
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 h3 {
     color: #333;
+    
+    
 }
 
 ul.Contactos {
@@ -463,23 +465,55 @@ ul.Contactos li {
     margin-bottom: 10px;
 }
 
-.ConsultasContacto {
-    margin: 20px auto;
+.consulta-section {
+    background-color: #ffffff;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
+   
 }
 
-/* Estilos para los íconos */
-.ConsultasContacto h3::before {
-    content: "\f086";
-    font-family: 'Font Awesome 5 Free';
-    margin-right: 5px;
+.consulta-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
 }
 
-.ConsultasContacto h3:last-child::before {
-    content: "\f0e0";
+.consulta-form .form-group {
+    margin-bottom: 15px;
+}
+
+.consulta-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+
+.consulta-form input,
+.consulta-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.consulta-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.consulta-form button:hover {
+    background-color: #0056b3;
 }
 
 /* COMPRAS */
@@ -732,10 +766,13 @@ ul.Contactos li {
 
 }
 
-@media (min-width: 850px){
+@media (min-width: 768px){
     header{
         position: fixed;
         width: 100%;
+        z-index: 999;
+        top: 0;
+
     }
 
     header .container{
@@ -773,7 +810,7 @@ ul.Contactos li {
     }
 
     #somos-cases .img-container{
-        background-image: url("imagenes/quienes.jpeg");
+        background-image: url("/imagenes/quienes.jpeg");
         background-size: cover;
         background-position: center center;
         height: 500px;
@@ -795,7 +832,7 @@ ul.Contactos li {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 25px;
-        margin: 0; 
+        margin-top: 7em; 
     }
 
 
@@ -827,6 +864,23 @@ ul.Contactos li {
         left: 22em;
     }
 
+    .container-Contactos {
+        padding: 60px 30px;
+        display: grid;
+        gap: 25px;
+        margin-top: 5em;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .consulta-section {
+        width: 100%;
+        max-width: 800px;
+        box-sizing: border-box;
+       
+    }
+
+   
 
  
 
@@ -855,15 +909,18 @@ ul.Contactos li {
         left: 35em;
     }
 
-    .info-product a button {
-        font-weight: bold;
-        padding: 1em 11.3em;
-        color: white;
-        background-color: #DFB625;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    
+    .container-items{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+        margin-top: 7em; 
     }
+
+   
+
+   
+
+
     
 
  
